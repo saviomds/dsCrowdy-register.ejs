@@ -1,0 +1,8 @@
+<% if (typeof errors !== 'undefined' && errors.length > 0) { %>
+    <% errors.forEach(function(error) { %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Warning! <%= error.msg %></strong> . You should check in on some of those fields below.
+           <div class="float-right" role="button"> <i class="bi bi-x-lg btn-close " data-bs-dismiss="alert" aria-label="Close"></i></div>
+        </div>
+    <% }); %>
+<% } %>

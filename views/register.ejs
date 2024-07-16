@@ -1,0 +1,54 @@
+<form method="post" class="container border mt-4">
+  <h2 class="px-3 mb-3">Register</h2>
+  <%- include('partials/messages') %>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      name="username"
+      id="exampleFormControlInput1"
+      placeholder="Username"
+      value="<%= typeof username != 'undefined' ? username : '' %>"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"
+      >Email address</label
+    >
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      id="exampleFormControlInput1"
+      placeholder="name@example.com"
+      value="<%= typeof email != 'undefined' ? email : '' %> "
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      id="exampleFormControlInput1"
+      placeholder="password"
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      name="confirmPassword"
+      id="exampleFormControlInput1"
+      placeholder="ConfirmPassword"
+      value="<%= typeof confirmPassword != 'undefined' ? confirmPassword : '' %>"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary mb-3">Register</button>
+  <div class="mb3">
+    <p>Already have an account? <a href="login">Log-in</a></p>
+  </div>
+</form>
